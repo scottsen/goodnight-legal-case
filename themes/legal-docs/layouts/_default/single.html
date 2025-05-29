@@ -1,0 +1,16 @@
+{{ define "main" }}
+<article>
+    <h1>{{ .Title }}</h1>
+    {{ if .Params.document_types }}
+    <div class="document-meta-container">
+        {{ range .Params.document_types }}
+        <span class="document-meta">{{ . | title }}</span>
+        {{ end }}
+        {{ range .Params.legal_statuses }}
+        <span class="document-meta" style="background: #27ae60;">{{ . | title }}</span>
+        {{ end }}
+    </div>
+    {{ end }}
+    {{ .Content }}
+</article>
+{{ end }}

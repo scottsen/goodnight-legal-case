@@ -1,0 +1,84 @@
+baseURL = "https://goodnight-v-ralidak.legal"
+languageCode = "en-us"
+title = "Goodnight v. Ralidak | Professional Legal Arsenal"
+theme = "legal-docs"
+
+[params]
+  # Professional Legal Case Information
+  case_name = "Goodnight v. Ralidak"
+  case_number = "20-3-03830-3 SEA / 25-2-11308-6 SEA"
+  court = "King County Superior Court"
+  judge = "Hon. Rania Rampersad"
+  
+  # Professional Status Indicators
+  case_strength = "9.8/10"
+  recovery_potential = "$1.9M - $3.8M"
+  success_probability = "85-95%"
+  emergency_status = "57+ Days Child Sexual Abuse Ignored"
+  
+  # Professional Preparation Metrics
+  documents_indexed = "172"
+  evidence_chunks = "2,327"
+  preparation_level = "Immediately Actionable"
+  
+  # Attorney Decision Support
+  framework_a_success = "95%+"
+  framework_b_success = "85%+"
+  framework_a_recovery = "$50K-$150K"
+  framework_b_recovery = "$1.9M-$3.8M"
+  
+  # Professional Presentation
+  description = "Complete professional legal arsenal for immediate attorney assessment and action"
+  featured_image = "/images/scales-of-justice.jpg"
+  site_logo = "/images/legal-logo.png"
+
+[menu]
+  [[menu.main]]
+    name = "🎯 Executive Summary"
+    url = "/executive-summary/"
+    weight = 10
+    
+  [[menu.main]]
+    name = "⚖️ Framework Selection"
+    url = "/framework-selection/"
+    weight = 20
+    
+  [[menu.main]]
+    name = "📋 Evidence Vault"
+    url = "/evidence-vault/"
+    weight = 30
+    
+  [[menu.main]]
+    name = "👨‍⚖️ Judicial Intelligence"
+    url = "/judicial-intelligence/"
+    weight = 40
+    
+  [[menu.main]]
+    name = "🚨 Emergency Actions"
+    url = "/emergency-actions/"
+    weight = 50
+    
+  [[menu.main]]
+    name = "📊 Case Metrics"
+    url = "/case-metrics/"
+    weight = 60
+    
+  [[menu.main]]
+    name = "💼 Attorney Resources"
+    url = "/attorney-resources/"
+    weight = 70
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "github"
+    lineNos = true
+
+[taxonomies]
+  document_type = "document_types"
+  legal_status = "legal_statuses"
+  evidence_type = "evidence_types"
+  party = "parties"
+  professional = "professionals"
